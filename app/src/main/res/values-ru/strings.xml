@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Project DoD</string>
+    <string name="language">РУ</string>
+    <string name="bin">ДВ</string>
+    <string name="oct">ВОС</string>
+    <string name="dec">ДЕС</string>
+    <string name="hex">ШЕС</string>
+    <string name="author">{сделан Невским}</string>
+    <string name="calc">Калькулятор</string>
+    <string name="comp_units">Ковертер единиц</string>
+    <string name="ip_calc">IP калькулятор</string>
+    <string name="regex">RegEx Генератор</string>
+    <string name="graphs">Графы</string>
+    <string name="logic_shemes">Логические схемы</string>
+    <string name="euler_diagram">Круги Эйлера</string>
+    <string name="colors">Цвета</string>
+    <string name="math_sings">Математические символы</string>
+    <string name="plus">+ Складывает числа</string>
+    <string name="minus">- Вычитает числа</string>
+    <string name="multiplay">* Умножает числа</string>
+    <string name="devide">/ Делит числа</string>
+    <string name="exponent">^ Перевод числа в степень</string>
+    <string name="root">√ Возвращает квадратный корень из числа</string>
+    <string name="from_10_other_head">Перевод числа из 10 системы в любую другую</string>
+    <string name="int_part">Целая часть:</string>
+    <string name="fract_part">Дробная часть:</string>
+    <string name="from_10_other_int">Делим число на основание новой системы счисления. Записываем остаток от деления. Повторяем процесс деления для целой части результата, пока результат не станет равен 0. Остатки записываются в обратном порядке — это и будет число в новой системе.</string>
+    <string name="from_10_other_fract">Умножаем дробную часть числа на основание новой системы. Целая часть полученного результата — это первая цифра в новой системе. Дробную часть продолжаем умножать на основание, повторяя шаг 2, до достижения требуемой точности.</string>
+    <string name="from_other_10_head">Перевод числа из любой системы в 10</string>
+    <string name="from_other_10_int">Каждую цифру числа умножаем на основание системы счисления, возведенное в степень, соответствующую позиции цифры (счёт идет с нуля, начиная с самой правой цифры). Суммируем результаты.</string>
+    <string name="from_other_10_fract">Каждую цифру дробной части умножаем на основание, возведенное в отрицательную степень, соответствующую позиции цифры (первая цифра после запятой — это степень -1, вторая — -2 и т.д.). Суммируем результаты.</string>
+    <string name="brackets">() Определяют последовательность действий</string>
+    <string name="exit">Выйти</string>
+    <string-array name="BinPrefixes">
+        <item>Нет</item>
+        <item>Кило</item>
+        <item>Мега</item>
+        <item>Гига</item>
+        <item>Тера</item>
+        <item>Пета</item>
+        <item>Экса</item>
+    </string-array>
+    <string name="bits">Биты</string>
+    <string name="bytes">Байты</string>
+    <string name="from">Из:</string>
+    <string name="to">В:</string>
+    <string name="copy">Копировать</string>
+    <string name="units_header">Компьютерные единицы</string>
+    <string name="units_desc">Существует два типа единиц измерения: биты и байты. 1 байт = 8 бит. Также единицы могут дополняться префиксами: кило, мега и т. д. Каждый последующий префикс будет в 1024 раза больше предыдущего.</string>
+    <string name="prefix">Приставка</string>
+</resources>

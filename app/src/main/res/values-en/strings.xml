@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Project DoD</string>
+    <string name="language">EN</string>
+    <string name="bin">BIN</string>
+    <string name="oct">OCT</string>
+    <string name="dec">DEC</string>
+    <string name="hex">HEX</string>
+    <string name="author">{by Nevsky}</string>
+    <string name="calc">Calculator</string>
+    <string name="comp_units">Units converter</string>
+    <string name="ip_calc">IP calculator</string>
+    <string name="regex">RegEx Generator</string>
+    <string name="graphs">Graphs</string>
+    <string name="logic_shemes">Logic Shemes</string>
+    <string name="euler_diagram">Euler Diagram</string>
+    <string name="colors">Colors</string>
+    <string name="math_sings">Mathematical signs</string>
+    <string name="plus">+ Adds numbers</string>
+    <string name="minus">- Subtracts numbers</string>
+    <string name="multiplay">* Multiplies numbers</string>
+    <string name="devide">/ Divides the numbers</string>
+    <string name="exponent">^ Converting a number to a power</string>
+    <string name="root">√ Returns the square root of the number</string>
+    <string name="from_10_other_head">Conversion from base 10 to any other base</string>
+    <string name="int_part">Integer part:</string>
+    <string name="fract_part">Fractional part:</string>
+    <string name="from_10_other_int">Divide the number by the base of the target system. Record the remainder. Repeat the division process for the quotient (integer part) until the quotient becomes 0. The remainders, written in reverse order, form the number in the new base.</string>
+    <string name="from_10_other_fract">Multiply the fractional part by the base of the target system. The integer part of the result is the first digit in the new base. Continue multiplying the fractional part by the base, repeating step 2, until the desired precision is reached.</string>
+    <string name="from_other_10_head">Conversion from any base to base 10</string>
+    <string name="from_other_10_int">Multiply each digit of the number by the base raised to the power of the digit\'s position (starting from 0, from the rightmost digit). Sum the results.</string>
+    <string name="from_other_10_fract">Multiply each digit of the fractional part by the base raised to the negative power corresponding to the digit\'s position (first digit after the decimal point is raised to -1, second to -2, and so on). Sum the results.</string>
+    <string name="brackets">() Define the sequence of actions</string>
+    <string name="exit">Exit</string>
+    <string-array name="BinPrefixes">
+        <item>None</item>
+        <item>Kilo</item>
+        <item>Mega</item>
+        <item>Giga</item>
+        <item>Tera</item>
+        <item>Peta</item>
+        <item>Exa</item>
+    </string-array>
+    <string name="bits">Bits</string>
+    <string name="bytes">Bytes</string>
+    <string name="from">From:</string>
+    <string name="to">To:</string>
+    <string name="copy">Copy</string>
+    <string name="units_header">Computer units</string>
+    <string name="units_desc">There are two types of computer units: Bits and Bytes. 1 Byte = 8 Bits. Also, units can be supplemented with prefixes: Kilo, Mega, etc. Each subsequent prefix will be 1024 times larger than the previous one.</string>
+    <string name="prefix">Prefix</string>
+</resources>

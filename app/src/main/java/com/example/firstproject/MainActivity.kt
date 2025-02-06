@@ -50,6 +50,7 @@ import androidx.core.view.updatePadding
 import java.util.Locale
 import kotlin.math.roundToInt
 import kotlin.properties.Delegates
+import Scripts.Functions.Gemini
 
 
 class MainActivity : AppCompatActivity() {
@@ -187,10 +188,14 @@ class MainActivity : AppCompatActivity() {
 
 
     @SuppressLint("ClickableViewAccessibility")
-    @RequiresApi(Build.VERSION_CODES.R)
+    @RequiresApi(Build.VERSION_CODES.S)
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         enableEdgeToEdge()
+
+        val apiKey = "AIzaSyC4sgG4EfTT8lIhPKdsTprq51BuuP_oXzw"
+        val userPrompt = "Напиши короткую историю про медведя-космонавта"
+
 
         // Обновляем конфигурацию приложения в соответствии с сохранённым языком
         sharedPreferences = androidx.preference.PreferenceManager.getDefaultSharedPreferences(this@MainActivity)
@@ -213,7 +218,16 @@ class MainActivity : AppCompatActivity() {
 
         CalcUI(this).start()
         ConverterUI(this).start()
-
+        Gemini().callGeminiAPI(userPrompt, apiKey)
+            { response ->
+                runOnUiThread {
+                    if (response != null) {
+                        findViewById<TextView>(R.id.exit_app).text = response
+                    } else {
+                        findViewById<TextView>(R.id.exit_app).text = "Ошибка запроса"
+                    }
+                }
+        }
 
         //////////////Самые важные поля
         clipboard = getSystemService(Context.CLIPBOARD_SERVICE) as ClipboardManager
